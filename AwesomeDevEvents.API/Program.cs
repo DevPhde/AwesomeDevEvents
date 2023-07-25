@@ -3,7 +3,7 @@ using AwesomeDevEvents.API.Persistence;
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
-builder.Services.AddSingleton<DevEventsDbContext>();
+builder.Services.AddSingleton<DevEventsDbContext>(); // usa memoria pra simular o banco de dados
 builder.Services.AddControllers();
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();
